@@ -1,1 +1,38 @@
- 
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python-related files
+__pycache__/
+*.py[cod]
+*.env
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build and output directories
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Coverage reports
+coverage/
+.nyc_output/ 
