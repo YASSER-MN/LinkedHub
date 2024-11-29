@@ -1,4 +1,4 @@
-Yasser Mounim G:B- Read Alaoui G:B- Ali benjeloun G:B- Kawtar Fadloullah G:B-Ghita chark G:B
+Yasser Mounim G:B- Reda Alaoui Belghiti G:B- Ali benjeloun G:B- Kawtar Fadloullah G:B-Ghita chark G:B
 # LinkedHub
 
 A collaborative project to develop a LinkedIn-like platform featuring user authentication, a dynamic home page, job postings, networking, and notification management.
