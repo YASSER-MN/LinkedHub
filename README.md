@@ -1,4 +1,4 @@
-Yasser Mounim - Read Aloui - Ali benjeloun - Kawtar Fadloullah
+Yasser Mounim G:B- Read Aloui G:B- Ali benjeloun G:B- Kawtar FadloullahG:B
 # LinkedHub
 
 A collaborative project to develop a LinkedIn-like platform featuring user authentication, a dynamic home page, job postings, networking, and notification management.
