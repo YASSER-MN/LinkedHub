@@ -44,35 +44,53 @@ body{
     margin-right: -60px;
 }
 .Home{
-    width: 60px;
-    height: 45px;
+    width: 33px;
+    height: 25px;
+    margin-top: 7px;
+}
+.Linkhome{
+    text-decoration: none;
+}
+h2{
+    font-size: 7px;
+    width: 10px;
+    color: darkgray;
+    margin-top: 1px;
+    margin-left: 6px;
 }
 .Home:hover{  
     cursor: pointer;
-    width: 65px;
-    height: 45px;
 }
 .Mynetwork{
     width: 60px;
     height: 50px;
+    margin-top: 3px;
 }
 .Mynetwork:hover{
     cursor: pointer;
-    width: 65px;
-    height: 45px;
+}
+.Jobss{
+    width: 10px;
+    color: darkgray;
+    margin-top: 1px;
+    margin-left: 6px;
+    font-size: 8px;
+
 }
 .Jobs{
-    width: 60px;
-    height: 45px;
+    width: 29px;
+    height: 25px;
+    margin-top: 8px;
 }
 .Jobs:hover{
     cursor: pointer;
-    width: 65px;
-    height: 45px;
+    width: 31px;
 }
 .Messaging{
     width: 60px;
     height: 45px;
+    margin-top: 6px;
+
 }
 .Messaging:hover{
     cursor: pointer;
@@ -82,6 +100,7 @@ body{
 .Notifications{
     width: 60px;
     height: 45px;
+    margin-top: 5px;
 }
 .Notifications:hover{
     cursor: pointer;
@@ -91,6 +110,11 @@ body{
 .Me{
     width: 60px;
     height: 45px;
+    margin-top: 5px;
+}
+.Me:hover{
+    cursor: pointer;
+    width: 63px;
 }
 .linediv{
     width: 0.1px;
