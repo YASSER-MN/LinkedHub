@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    
+    <link rel="stylesheet" href="../testing/jobs.css">
+    <title>LinkedIn</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search for anything">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" alt="home"> <span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png" alt="network"> <span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt="jobs"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt="message"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt="notification"> <span>Notifications</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!----Dropdown menu-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>John Doe</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------left box--------------- -->
+    <main class="job_page">
+        <section class="left_job_container">
+            <div class="left_job_div">
+                <p><i class="fa-solid fa-bookmark"></i><a href="#">Mes offres d"emplois</a></p>
+                <p><i class="fa-solid fa-bell"></i><a href="#">Alertes Emplois</a></p>
+                <p><i class="fa-solid fa-money-bill"></i><a href="#">Salaire</a></p>
+                <p><i class="fa-solid fa-clipboard"></i><a href="#">Évaluations des compétences</a></p>
+                <p><i class="fa-brands fa-youtube"></i><a href="#">Conseils pour les personnes en recherche de poste</a>
+                </p>
+                <p><i class="fa-solid fa-gear"></i><a href="#">Préférences de candidature</a></p>
+            </div>
+            <div class="add_job"> <i class="fa-solid fa-file-pen"></i><a href="#">Publier une offre <br> d’emploi
+                    gratuite</a>
+            </div>
+        </section>
+
+        <!-- ------------center box--------------- -->
+        <section class="center_job_container">
+            <div class="left_job_div responsive_box_job">
+                <p><i class="fa-solid fa-bookmark"></i><a href="#">Mes offres d"emplois</a></p>
+            </div>
+
+            <div class="preview_job_search">
+                <h2>Recherches d’emplois récentes <span>Effacer</span></h2>
+                <p>Stagiaire développeur web <span>(210 nouvelle(...</span> <br> <span
+                        class="country_name">canada</span> </p>
+                <p>Stagiaire en développement Web<span>(2 nouvelle(s))</span> <br><span
+                        class="country_name">canada</span> </p>
+                <p>stagiaire front end <span>(13 nouvelle(s))</span><br><span class="country_name">canada</span> </p>
+            </div>
+            <div class="see_more_job">
+                <p>Voir plus <i class="fa-solid fa-angle-down"></i></p>
+            </div>
+
+            <div class="job_oportunity first_oportunity">
+                <h2>Opportunités en télétravail</h2>
+                <p>Parce que vous avez manifesté votre intérêt pour le télétravail</p>
+                <div class="company_job">
+                    <img class="company_job_photo" src="../css/images/logo5.png" alt="#">
+                    <div class="job_description">
+                        <h6><a href="#">crypto coding intern</a> </h6>
+                        <p><a href="#">Sovereign Prime </a> <br>
+                            Ottawa, ON (À distance)</p>
+                        <div class="photo_pro_text">
+                            <img class="ph_pro_job" src="../photos/ma photo.jpg" alt="#">
+                            <p>Votre profil correspond à cette offre</p>
+                        </div>
+                        <span> il y a 6 heures</span>
+                    </div>
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </div>
+
+            <div class="job_oportunity">
+                <div class="company_job">
+                    <img class="company_job_photo" src="../css/images/logo2-min.jpg" alt="#">
+                    <div class="job_description">
+                        <h6><a href="#">Product Design Intern (UX/UI) - Summer <br> 2025 </a> </h6>
+                        <p><a href="#">Pilot </a> <br>
+                            Vancouver, BC (À distance)</p>
+                        <div class="photo_pro_text">
+                            <p> Votre profil correspond à cette offre</p>
+                        </div>
+                        <span> il y a 8 heures</span>
+                    </div>
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </div>
+
+            <div class="job_oportunity">
+                <div class="company_job">
+                    <img class="company_job_photo" src="../css/images/logo1-min.jpg" alt="#">
+                    <div class="job_description">
+                        <h6><a href="#">Virtual HR Internship or CO-OP</a> </h6>
+                        <p><a href="#">GAOTek Inc.</a> <br> Pickering, ON (À distance)</p>
+                        <div class="photo_pro_text">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <p>Votre profil correspond à cette offre</p>
+                        </div>
+                        <span> il y a 10 heures</span>
+                    </div>
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </div>
+
+            <div class="job_oportunity">
+                <div class="company_job">
+                    <img class="company_job_photo" src="../css/images/logo7.png" alt="#">
+                    <div class="job_description">
+                        <h6><a href="#">crypto coding intern</a> </h6>
+                        <p><a href="#">Sovereign Prime </a> <br>
+                            Ottawa, ON (À distance)</p>
+                        <div class="photo_pro_text">
+                            <p> Votre profil correspond à cette offre</p>
+                        </div>
+                        <span> il y a 12 heures</span>
+                    </div>
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+            </div>
+            <div class="see_more_job">
+                <p>Tout voir </p>
+            </div>
+        </section>
+
+
+        <!-- ------------right box--------------- -->
+
+        <section class="right_job_container">
+            <aside class="pub_img_text">
+                <div class="all_links">
+                    <a href="#"> About &nbsp;Accessibilité &nbsp;Help Center<br> Privacy & Terms <br>
+                        Ad Choices &nbsp; Advertising <br>Business Services <br>
+                        Get the LinkedIn app</a>
+                    <span>LinkedIn Corporation © 2025</span>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    </article>
+</body>
+
+</html>
