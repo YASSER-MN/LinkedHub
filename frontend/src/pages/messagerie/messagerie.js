@@ -7,7 +7,7 @@ let profileMenu = document.getElementById("profileMenu");
         let sideActivity = document.getElementById("sidebarActivity");
         let moreLink = document.getElementById("showMoreLink");
 
-        function toggleActivity() {
+        /*function toggleActivity() {
             sideActivity.classList.toggle("open-activity");
             if (sideActivity.classList.contains("open-activity")) {
                 moreLink.innerHTML = "Show less <b>-</b>";
@@ -16,4 +16,4 @@ let profileMenu = document.getElementById("profileMenu");
             else {
                 moreLink.innerHTML = "Show More <b>+</b>";
             }
-        }
+        }*/
