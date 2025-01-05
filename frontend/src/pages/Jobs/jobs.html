@@ -5,91 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
-    <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="./jobs.css">
+    <title>LinkedIn</title>
 </head>
 
 <body>
-    <header id="header" class="header_box_shadow">
-        <nav class="nav_bar_profil">
-
-            <div class="logo_search_bar">
-                <a href="index.html"><img class="logo" src="icons/linkedin logo icon.svg" alt="LinkedIn Logo"
-                        style="height: 35px; margin-right: 5px;">
-                </a>
-                <div class="search_bar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input class="search_bar_input" type="text" placeholder="Recherche">
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search for anything">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" alt="home"> <span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png" alt="network"> <span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt="jobs"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt="message"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt="notification"> <span>Notifications</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!----Dropdown menu-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>John Doe</h3>
+                        <a href="#">See your profile</a>
+                    </div>
                 </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+
+
             </div>
-            <div class="icons_bar_profils">
-                <ul class="icons_links_profil ">
-
-                    <li class="icon_link after_element"><a href="index.html"><i class="fa-solid fa-briefcase"></i><span>
-                                <p>Emplois</p>
-                            </span></a></li>
-
-                    <li class="icon_link me" id="profil_button">
-                        <a href="#" id="link_ckeck_pro"><img id="my_profil" src="photos/ma photo.jpg" alt=""><span>
-                                <p>Vous<i class="fa-solid fa-caret-down"></i></p>
-                            </span></a>
-                        <div class="profil_link" id="menu_profil">
-                            <div class="profil_name_job">
-                                <img class="post_photo_profil" src="./photos/ma photo.jpg" alt="#">
-                                <div class="name_and_job">
-                                    <h2>Kawtar fadloullah</h2>
-                                    <p> FRONTEND DEVELOPER</p>
-                                </div>
-                            </div>
-                            <div class="see_my_profil"><a href="profil.html">Voir le profil </a></div>
-                            <div class="account">
-                                <h4>Compte</h4>
-                                <p><a href="#">Passer à Premium</a></p>
-                                <p class="option"><a href="#">Préférence et confidentialité </a></p>
-                                <p class="option"><a href="#">Aide</a></p>
-                                <p class="option"><a href="#">Langue</a></p>
-                            </div>
-                            <div class="account">
-                                <h4>Gérer</h4>
-                                <p><a href="#">Poste et activité</a></p>
-                                <p class="option"><a href="#">Compte offre d'emplois</a></p>
-                            </div>
-                            <div class="log_out">
-                                <p>Déconnexion</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul id="second_icons_links_nav" style="margin-right: 50px;">
-                    <li class="grid_products"><a href="#"><img class="grid_icons" src="./images/grid.png" alt="#">
-                            <span>
-                                <p>Produits <i class="fa-solid fa-caret-down"></i></p>
-                            </span></a></li>
-
-                    <li class="new_job_plus"><a href="#"><i class="fa-solid fa-circle-plus"></i><span>
-                                <p>Publier une offre d'emploi</p>
-                            </span> <span class="responsive_text_job_header">Publier une offre <br> d'emploi</span></a>
-                    </li>
-                </ul>
-                <ul id="second_icons_links_nav">
-                    <li class="grid_products">
-                        <a href="#">
-                            <img class="grid_icons" src="./photos/premium.png" alt="Premium"
-                                style="height: 20px; margin-right: 5px;">
-                            <span>
-                                <p> Essayez Premium</p>
-                            </span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+        </div>
+    </nav>
 
     <!-- ------------left box--------------- -->
     <main class="job_page">
@@ -103,8 +90,7 @@
                 </p>
                 <p><i class="fa-solid fa-gear"></i><a href="#">Préférences de candidature</a></p>
             </div>
-            <div class="add_job"> <i class="fa-solid fa-file-pen"></i><a href="#">Publier une offre <br> d’emploi
-                    gratuite</a>
+            <div class="add_job"> <i class="fa-solid fa-file-pen"></i><a href="#">Start hiring with AI </a>
             </div>
         </section>
 
@@ -130,13 +116,13 @@
                 <h2>Opportunités en télétravail</h2>
                 <p>Parce que vous avez manifesté votre intérêt pour le télétravail</p>
                 <div class="company_job">
-                    <img class="company_job_photo" src="./images/logo5.png" alt="#">
+                    <img class="company_job_photo" src="./image/logo5.png" alt="#">
                     <div class="job_description">
                         <h6><a href="#">crypto coding intern</a> </h6>
                         <p><a href="#">Sovereign Prime </a> <br>
                             Ottawa, ON (À distance)</p>
                         <div class="photo_pro_text">
-                            <img class="ph_pro_job" src="./photos/ma photo.jpg" alt="#">
+                            <img class="ph_pro_job" src="images/user-1.png" alt="#">
                             <p>Votre profil correspond à cette offre</p>
                         </div>
                         <span> il y a 6 heures</span>
@@ -148,9 +134,9 @@
 
             <div class="job_oportunity">
                 <div class="company_job">
-                    <img class="company_job_photo" src="./images/logo2-min.jpg" alt="#">
+                    <img class="company_job_photo" src="./image/logo2-min.jpg" alt="#">
                     <div class="job_description">
-                        <h6><a href="#">Product Design Intern (UX/UI) - Summer <br> 2022 (May) </a> </h6>
+                        <h6><a href="#">Product Design Intern (UX/UI) - Summer <br> 2025 </a> </h6>
                         <p><a href="#">Pilot </a> <br>
                             Vancouver, BC (À distance)</p>
                         <div class="photo_pro_text">
@@ -165,7 +151,7 @@
 
             <div class="job_oportunity">
                 <div class="company_job">
-                    <img class="company_job_photo" src="./images/logo1-min.jpg" alt="#">
+                    <img class="company_job_photo" src="./image/logo1-min.jpg" alt="#">
                     <div class="job_description">
                         <h6><a href="#">Virtual HR Internship or CO-OP</a> </h6>
                         <p><a href="#">GAOTek Inc.</a> <br> Pickering, ON (À distance)</p>
@@ -182,7 +168,7 @@
 
             <div class="job_oportunity">
                 <div class="company_job">
-                    <img class="company_job_photo" src="./images/logo7.png" alt="#">
+                    <img class="company_job_photo" src="./image/logo7.png" alt="#">
                     <div class="job_description">
                         <h6><a href="#">crypto coding intern</a> </h6>
                         <p><a href="#">Sovereign Prime </a> <br>
@@ -207,11 +193,10 @@
         <section class="right_job_container">
             <aside class="pub_img_text">
                 <div class="all_links">
-                    <a href="#"> Infos &nbsp;Accessibilité &nbsp;Assistance clientèle <br> Conditions générales et
-                        confidentialité <br>
-                        Préférences Pubs &nbsp; Publicité <br> Solutions professionnelles <br>
-                        Téléchargez l’application willHortone Plus </a>
-                    <span>WillHortone corporation © 2022</span>
+                    <a href="#"> About &nbsp;Accessibilité &nbsp;Help Center<br> Privacy & Terms <br>
+                        Ad Choices &nbsp; Advertising <br>Business Services <br>
+                        Get the LinkedIn app</a>
+                    <span>LinkedIn Corporation © 2025</span>
                 </div>
             </aside>
         </section>
