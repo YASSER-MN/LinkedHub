@@ -1,140 +1,4 @@
 
-
-.header{
-    margin-top: -8px;
-    margin-left: -8px;
-    height: 55px;
-    display: flex;
-    justify-content:space-evenly;
-    background-color: white;
-    margin-right: -9px;
-    align-items: center;
-}
-body{
-    background-color: #F4F2EE;
-    padding: 0%;
-    width: 100%;
-    height: 100%;
-}
-.logo{
-    height: 40px;
-    width: 40px;
-    margin-right: -70px;
-    border-radius: 15%;
-}
-.searchnav{
-    width:20%;
-    background-color: #EDF3F8;
-    height: 40px;
-    display: flex;
-}
-.searchnav:hover{
-    width: 30%;
-}
-.searchimg{
-    width: 30px;
-}
-.search-input {
-    flex: 1;
-    border: none;
-    padding: 5px 10px;
-    font-size: 1em;
-    background-color: transparent;
-}
-.Icons{
-    display: flex;
-    gap: 15px;
-    margin-right: -60px;
-}
-.Home{
-    width: 33px;
-    height: 25px;
-    margin-top: 7px;
-}
-.Linkhome{
-    text-decoration: none;
-}
-h2{
-    font-size: 7px;
-    width: 10px;
-    color: darkgray;
-    margin-top: 1px;
-    margin-left: 6px;
-}
-.Home:hover{  
-    cursor: pointer;
-}
-.Mynetwork{
-    width: 60px;
-    height: 50px;
-    margin-top: 3px;
-}
-.Mynetwork:hover{
-    cursor: pointer;
-}
-.Jobss{
-    width: 10px;
-    color: darkgray;
-    margin-top: 1px;
-    margin-left: 6px;
-    font-size: 8px;
-
-}
-.Jobs{
-    width: 29px;
-    height: 25px;
-    margin-top: 8px;
-}
-.Jobs:hover{
-    cursor: pointer;
-    width: 31px;
-}
-.Messaging{
-    width: 60px;
-    height: 45px;
-    margin-top: 6px;
-
-}
-.Messaging:hover{
-    cursor: pointer;
-    width: 65px;
-    height: 45px;
-}
-.Notifications{
-    width: 60px;
-    height: 45px;
-    margin-top: 5px;
-}
-.Notifications:hover{
-    cursor: pointer;
-    width: 65px;
-    height: 45px;
-}
-.Me{
-    width: 60px;
-    height: 45px;
-    margin-top: 5px;
-}
-.Me:hover{
-    cursor: pointer;
-    width: 63px;
-}
-.linediv{
-    width: 0.1px;
-    height: 50px;
-    background-color: gray;
-}
-.buisness{
-    
-    width: 70px;
-    height: 50px;
-    margin-left: -50px;
-}
-.trypremium{
-    width: 120px;
-    height: 45px;
-    margin-left: -50px;
-}
 .partieGauche{
     margin-top: 25px;
     width: 250px;
@@ -172,6 +36,7 @@ h2{
 hr{
     background-color: aqua;
 }
+
 .info{
     width: 100%;
     display:flex;
@@ -259,255 +124,498 @@ hr{
 
 
 
+/* BDYA DYALIII  */
 
+/* -------------------------- Navigation et Interface ----------------------- */
 
-.aside-item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 5px;
-
-
+/* Classe pour les éléments du menu de navigation (sidebar) */
+.aside-item {
+    display: flex; /* Utilise le modèle de mise en page Flexbox pour organiser les éléments en ligne (horizontalement). */
+    justify-content: space-between; /* Espacement égal entre les éléments à l'intérieur de .aside-item. */
+    align-items: center; /* Aligne les éléments au centre verticalement dans .aside-item. */
+    width: 100%; /* Prend toute la largeur disponible de l'élément parent. */
+    gap: 5px; /* Ajoute un espace de 5px entre les éléments enfants. */
 }
 
-.aside-item > div:nth-child(1){
-    margin-left: 18px;
-}
-.aside-item > div:nth-child(2){
-    margin-right: 18px;
+
+/* Marge à gauche pour le premier enfant d'un aside-item */
+.aside-item > div:nth-child(1) {
+    margin-left: 18px; /* Ajoute une marge de 18px à gauche du premier enfant (div) */
 }
 
+/* Marge à droite pour le deuxième enfant d'un aside-item */
+.aside-item > div:nth-child(2) {
+    margin-right: 18px; /* Ajoute une marge de 18px à droite */
+}
+
+/* Style général pour la section principale */
 main{
-    background-color: rgb(244, 242, 238);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    margin-top: 2rem;
-    margin-inline: 8rem;
-    gap: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: rgb(244, 242, 238); /* Fond de couleur gris clair pour l'élément main. */
+    display: flex; /* Utilise le modèle de mise en page Flexbox pour organiser les éléments enfants. */
+    flex-direction: row; /* Aligne les éléments enfants en ligne (horizontalement). */
+    justify-content: space-between; /* Espacement égal entre les éléments enfants dans main. */
+    margin-top: 2rem; /* Ajoute une marge de 2rem en haut de main. */
+    margin-inline: 8rem; /* Ajoute une marge de 8rem à gauche et à droite de main. */
+    gap: 20px; /* Crée un espacement de 20px entre les éléments enfants. */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Définit la police de caractères pour tout le texte dans main. */
 }
 
-
-aside{
-    background-color: white;
-    border-radius: 10px;
-    width: 340px;
-    border: 1px solid  rgb(224, 219, 208);
-    /* padding-inline: 15px; */
-    /* padding-inline == padding left and right */
+/* Style pour l'élément aside */
+aside {
+    background-color: white; 
+    border-radius: 10px; /* Coins arrondis de 10px */
+    width: 340px; /* Largeur de 340px */
+    border: 1px solid rgb(224, 219, 208); /* Bordure de 1px de couleur gris clair */
     color: rgb(102, 102, 102);
-    font-size: 16px;
-    font-weight: 500;
-
-
+    font-size: 16px; /* Taille de police de 16px */
+    font-weight: 500; /* Poids de la police moyen */
 }
+
+/* Classe pour le conteneur de gestion de réseau */
 .gerer-reseau{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 3px;
+    display: flex; /* Utilise flexbox */
+    justify-content: space-around; /* Espacement égal autour des éléments */
+    align-items: center; /* Aligne les éléments au centre verticalement */
+    gap: 3px; /* Espacement de 3px entre les éléments */
 }
+
+
+/* Style pour les titres de section dans aside */
 .aside-title{
-    border-bottom: 1px solid  rgb(224, 219, 208);
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    margin-left: 8px;
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
+    border-bottom: 1px solid rgb(224, 219, 208); /* Bordure inférieure de couleur gris clair */
+    height: 3rem; /* Hauteur de 3rem */
+    display: flex; /* Utilise flexbox */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    margin-left: 8px; /* Marge à gauche de 8px */
+    font-size: 18px; /* Taille de police de 18px */
+    font-weight: 600; /* Poids de la police semi-gras */
+    color: black; /* Couleur du texte en noir */
 }
 
-.aside-item:hover{
-    background-color: rgb(243,243,243);
-    cursor: pointer;
+
+/* Effet au survol pour un item dans aside */
+.aside-item:hover {
+    background-color: rgb(243, 243, 243); /* Change la couleur de fond au survol */
+    cursor: pointer; /* Change le curseur en main (pointer) */
 }
 
-section{
-    width: 70%;
-    display: flex;
-    gap: 10px;
-    justify-content: flex-start;
-    flex-direction: column;
+/* Style pour la section principale contenant le contenu */
+section {
+    width: 70%; /* Prend 70% de la largeur de son conteneur parent */
+    display: flex; /* Utilise flexbox */
+    gap: 10px; /* Espacement de 10px entre les éléments */
+    justify-content: flex-start; /* Aligne les éléments à gauche */
+    flex-direction: column; /* Aligne les éléments en colonne (verticalement) */
 }
 
-.main-header{
-    background-color: white;
-    border: 1px solid  rgb(224, 219, 208);
-    border-radius: 8px;
-    height: 3rem;
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 20px;
+/* Style pour l'en-tête principal */
+.main-header {
+    background-color: white; /* Fond blanc */
+    border: 1px solid rgb(224, 219, 208); /* Bordure de 1px de couleur gris clair */
+    border-radius: 8px; /* Coins arrondis de 8px */
+    height: 3rem; /* Hauteur de 3rem */
+    display: flex; /* Utilise flexbox */
+    justify-content: flex-start; /* Aligne les éléments à gauche */
+    padding-left: 20px; /* Marge à gauche de 20px */
 }
-.selected{
-    color: green;
-    border-bottom: 3px solid green;
-}
-.main-header > span{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+/* Classe pour un élément sélectionné */
+.selected {
+    color: green; /* Couleur du texte en vert */
+    border-bottom: 3px solid green; /* Bordure inférieure de 3px de couleur verte */
+}
+
+/* Style pour les span dans .main-header */
+.main-header > span {
+    display: flex; /* Utilise flexbox */
+    justify-content: center; /* Aligne le texte horizontalement au centre */
+    align-items: center; /* Aligne le texte verticalement au centre */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police de caractère */
+    font-size: 18px; /* Taille de police de 18px */
+    font-weight: 600; /* Poids de la police semi-gras */
+    padding: 20px; /* Ajoute 20px de padding autour du texte */
+}
+
+/* Effet de survol pour les span dans .main-header */
+.main-header > span:hover {
+    cursor: pointer; /* Change le curseur en main (pointer) */
+    background-color: rgb(243, 243, 243); /* Change la couleur de fond au survol */
+}
+
+/* Style pour la section des invitations */
+.main-invitations {
+    background-color: white; /* Fond blanc */
+    border: 1px solid rgb(224, 219, 208); /* Bordure de 1px de couleur gris clair */
+    border-radius: 8px; /* Coins arrondis de 8px */
+    height: 3rem; /* Hauteur de 3rem */
+    display: flex; /* Utilise flexbox */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    padding-inline: 15px; /* Espacement intérieur gauche et droit de 15px */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    font-size: 18px; /* Taille de police de 18px */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police de caractère */
+}
+
+/* ~~~~~  En-tête principal du profil avec un fond et une taille de police définie ~~~~~ */
+/* Style pour le deuxième enfant (span) dans .main-invitations */
+.main-invitations > span:nth-child(2) {
+    font-weight: 600; /* Poids de la police semi-gras */
+    height: 30px; /* Hauteur de 30px */
+    width: 60px; /* Largeur de 60px */
+    text-align: center; /* Aligne le texte au centre */
+}
+
+
+/* ~~~~~ En-tête pour la section des invitations ~~~~*/
+/* Effet de survol pour le deuxième enfant dans .main-invitations */
+.main-invitations > span:nth-child(2):hover {
+    cursor: pointer; /* Change le curseur en main (pointer) */
+    background-color: rgb(243, 243, 243); /* Change la couleur de fond au survol */
+}
+
+
+/* ---------------------------- Jeux et Interaction ------------------------- */
+
+/* Style pour la section des jeux */
+.jeux {
+    display: flex; /* Utilise flexbox */
+    justify-content: flex-start; /* Aligne les éléments à gauche */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+}
+
+/* Style pour chaque jeu individuel */
+.jeu {
+    display: flex; /* Utilise flexbox */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+}
+
+/* Style pour la section contenant les jeux */
+/* HAHYA CLASS D DIV MAIN JEUX */ 
+.main-jeux {
+    background-color: white; /* Fond blanc */
+    border: 1px solid rgb(224, 219, 208); /* Bordure de 1px de couleur gris clair */
+    border-radius: 8px; /* Coins arrondis de 8px */
+    height: 8rem; /* Hauteur de 8rem */
+    display: flex; /* Utilise flexbox */
+    justify-content: space-around; /* Espacement égal entre les éléments */
+    padding-inline: 15px; /* Espacement intérieur gauche et droit de 15px */
+    font-size: 18px; /* Taille de police de 18px */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police de caractère */
+    flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+/* Style pour l'élément #content */
+#content {
+    display: flex; /* Utilise flexbox */
+    gap: 10px; /* Espacement de 10px entre les éléments */
+    justify-content: center; /* Aligne les éléments au centre */
+    flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+/* Style pour l'élément .img-info */
+.img-info {
+    display: flex; /* Utilise flexbox */
+    gap: 10px; /* Espacement de 10px entre les éléments */
+    justify-content: flex-start; /* Aligne les éléments à gauche */
+}
+
+/* Style pour les images dans .img-info */
+.img-info > img {
+    height: 3rem; /* Hauteur de 3rem pour les images */
+}
+
+/* Classe pour les éléments en gras */
+.bold {
+    font-weight: bold; /* Applique un poids de police en gras */
+}
+
+/* Style pour la classe .date */
+.date {
+    font-size: 12px; /* Taille de police de 12px */
+}
+
+/* Style pour la classe .jeu */
+.jeu {
+    width: 260px; /* Largeur de 260px */
+    padding-inline: 20px; /* Espacement intérieur gauche et droit de 20px */
+}
+
+/* Style pour les boutons dans les jeux */
+.jeu-button {
+    color: rgb(68, 138, 208); /* Couleur du texte bleu */
+    border-radius: 15px; /* Coins arrondis de 15px */
+    border: 1px solid rgb(68, 138, 208); /* Bordure bleue */
+    width: 60px; /* Largeur de 60px */
+    height: 30px; /* Hauteur de 30px */
+    text-align: center; /* Aligne le texte au centre */
+    transition: all 0.1s; /* Transition de tous les changements de style en 0.1s */
+}
+
+/* Effet de survol pour le bouton de jeu */
+.jeu-button:hover {
+    background-color: #EBF4FD; /* Change la couleur de fond au survol */
+    cursor: pointer; /* Change le curseur en main (pointer) */
+    border: 3px solid #004182; /* Change la bordure en bleu foncé au survol */
+}
+
+/* Marge à droite pour le premier jeu */
+.jeux > div:nth-child(1) {
+    border-right: 1px solid rgb(180, 180, 180); /* Bordure droite gris clair */
+}
+
+/* Style pour l'information sur chaque jeu */
+.jeu-info {
+    min-width: 150px; /* Largeur minimale de 150px */
+}
+
+/* Layout pour la classe .true-aside */
+.true-aside > div {
+    width: 340px; /* Largeur de 340px pour chaque div dans .true-aside */
+}
+
+/* Layout pour la section .true-aside */
+.true-aside {
+    display: flex; /* Utilise flexbox */
+    justify-content: flex-start; /* Aligne les éléments à gauche */
+    gap: 20px; /* Espacement de 20px entre les éléments */
+    flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+/* ========== Pied de page "À propos" ========== */
+
+/* Style pour les éléments de .apropos-items */
+.apropos-items {
+    display: flex; /* Utilise flexbox */
+    flex-wrap: wrap; /* Permet aux éléments de se replier sur plusieurs lignes */
+    justify-content: center; /* Aligne les éléments au centre */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    gap: 10px; /* Espacement de 10px entre les éléments */
+}
+
+/* Style pour les éléments de .apropos-items */
+.apropos-items > span {
+    color: rgb(51, 51, 51); /* Couleur de texte gris foncé */
+    font-size: 13px; /* Taille de police de 13px */
+}
+
+/* Effet de survol pour les éléments de .apropos-items */
+.apropos-items > span:hover {
+    cursor: pointer; /* Change le curseur en main (pointer) */
+}
+
+/* Layout pour l'info dans .apropos-info */
+.apropos-info {
+    display: flex; /* Utilise flexbox */
+    justify-content: center; /* Aligne les éléments au centre */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    gap: 15px; /* Espacement de 15px entre les éléments */
+}
+
+/* Style pour les images dans .apropos-info */
+.apropos-info > img {
+    height: 15px; /* Hauteur de 15px pour les images */
+}
+
+/* Style pour les liens */
+a {
+    text-decoration: none; /* Enlève la décoration (souligné) des liens */
+}
+
+
+/* ==========  HADI DB DYAL AD Premium ========== */
+.premium-ad {
+    background-color: #fff;
     padding: 20px;
-}
-
-.main-header > span:hover{
-    cursor: pointer;
-    background-color: rgb(243,243,243);
-
-
-}
-
-
-
-.main-invitations{
-    background-color: white;
-    border: 1px solid  rgb(224, 219, 208);
     border-radius: 8px;
-    height: 3rem;
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 15px;
-    align-items: center;
-    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.premium-ad h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-.main-invitations > span:nth-child(2){
-    font-weight: 600;
-    height: 30px;
-    width: 60px;
-    text-align: center;
-
-}
-.main-invitations > span:nth-child(2):hover{
-    cursor: pointer;
-    background-color: rgb(243,243,243);
-}
-
-.jeux{
-    display: flex ;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.jeu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.main-jeux{
-    background-color: white;
-    border: 1px solid  rgb(224, 219, 208);
-    border-radius: 8px;
-    height: 8rem;
-    display: flex;
-    justify-content: space-around;
-    padding-inline: 15px;
-    
     font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    flex-direction: column;
-
+    margin-bottom: 10px; 
+    margin-top: -8px; /* hadi bach 7ydti dak lfaragh lbyd likan zayd lfo9 */
+    font-weight: bold; 
 }
 
-#content{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-direction: column;
+.premium-ad p {
+    font-size: 14px;
+    color: #555;
 }
 
-.img-info{
-    display: flex;
-    gap: 10px;
-    justify-content: flex-start;
-
-}
-.img-info >img{
-    height: 3rem;
-
-}
-
-.bold{
-    font-weight: bold;
-}
-.date{
-    font-size: 12px;
-}
-.jeu{
-    width: 260px;
-    padding-inline: 20px;
-}
-
-.jeu-button{
-    color: rgb(68, 138, 208);
+.premium-button {
+    background-color: #F9C982; /* Couleur par défaut */
+    color: black;
+    border: none;
     border-radius: 15px;
-    border: 1px solid rgb(68, 138, 208);
-    width: 60px;
-    height: 30px;
-    text-align: center;
-    transition: all 0.1s;
-}
-
-.jeu-button:hover{
-    background-color: #EBF4FD;
+    border: 1px solid #F9C982 ;
+    padding: 10px 20px;
     cursor: pointer;
-    border: 3px solid #004182
+    font-weight: bold; 
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Animation douce pour le changement de couleur */ 
 
 }
 
-.jeux > div:nth-child(1){
-    border-right: 1px solid rgb(180, 180, 180);
+.premium-button:hover {
+    background-color: #E9A53F; /* Couleur au survol */
 }
 
-.jeu-info{
-    min-width: 150px;
+.disclaimer {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
 }
 
-.true-aside>div{
-    width: 340px;
+/* ==========  HADI DB DYAL Suggestions des accounts ========== */
 
+.header-populaire h2{
+ color:#333;
 }
 
-.true-aside{
+.popular-pages-container {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 7px 7px 0 0;
+}
+
+.profile-container {
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: flex-start;
-    gap: 20px;
+    gap: 0.7rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    border-radius: 0 0 7px 7px;
+}
+
+.profile-card {
+    width: 24%;
+    height: 16rem;
+    background-color: #ffffff;
+    display: flex;
     flex-direction: column;
-}
-
-.apropos-items{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-}
-.apropos-items > span{
-    color: rgb(51, 51, 51);
-    font-size: 13px;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.112);
 }
 
-.apropos-items > span:hover{
+.profile-card:hover {
+    box-shadow: 2px 4px 2px 1px rgba(0, 0, 0, 0.185);
+}
+
+.profile-background {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+}
+
+.profile-background img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.profile-background .fa-circle-xmark {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    color: white;
+    font-size: 20px;
     cursor: pointer;
 }
-.apropos-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+
+.profile-photo {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
-.apropos-info >img {
-    height: 15px;
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
+
+.profile-card p {
+    color: #212121;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
+.profile-card a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #212121;
+}
+
+.additional-profiles {
+    margin-top: 3rem;
+}
+
+.additional-profile {
+    width: 24%;
+}
+
+.additional-profile-photo {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.additional-background img {
+    height: 4rem;
+}
+
+.all-profiles {
+    margin-top: 3rem;
+}
+
+.additional-profile-text {
+    font-weight: bold;
+    color: #212121;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.additional-profile:hover {
+    box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.185);
+} 
+
+
+/* ==========  HADI DB DYAL Suggestions des accounts ========== */
+
+ .suggestions-title {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Style identique à celui de la section Premium */
+    margin-bottom: 1rem; /* Marge pour séparer du reste */
+}
+
+.suggestions-title h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: -8px; /* Pour enlever l'espace en haut */
+    font-weight: bold;
+    color: #333; /* Couleur similaire à Premium */
+}
+
+.suggestions-title p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+ 

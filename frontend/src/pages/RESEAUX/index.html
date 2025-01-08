@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search for anything">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" ><img src="images/home.png" alt="home"> <span>Home</span></a></li>
+                <li><a href="#" class="active-link"><img src="images/network.png" alt="network"> <span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt="jobs"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt="message"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt="notification"> <span>Notifications</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!----Dropdown menu-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>John Doe</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!-- db Contenu principal (<main>) -->
+    <main>
+     <div class="true-aside">    <!-- Conteneur regroupant le contenu secondaire et les barres latérales. -->
+            <aside>
+        
+                <div class="aside-title">Gérer mon réseau</div>
+                <div class="aside-item"> <!-- Conteneur pour chaque option du menu (ex. Relations, Suivi...). -->
+                    <div class="gerer-reseau">
+                        <span><img class="Mynetwork" src="./images/iconconnexion-removebg-preview.png" alt="img"></span>
+                         <a href="relation.html"> <span>Relation</span></a> <!-- §§ HAHYA RELATION!! -->
+                    </div>
+                    <div>6</div>
+                </div>
+                <div class="aside-item">
+                    <div class="gerer-reseau">
+                        <span><img class="Mynetwork" src="./images/followersicon.png" alt="img"></span>
+                        <a href="followers.html"> <span>Suivi et abonnés</span></a>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="aside-item">
+                    <div class="gerer-reseau">
+                        <span><img class="Mynetwork" src="./images/goupes2.removebg-preview.png" alt="img"></span>
+                        <a href="groups.html"> <span>Groupes</span></a>
+                    </div>
+                    <div>2</div>
+                </div>
+                <div class="aside-item">
+                    <div class="gerer-reseau">
+                        <span><img class="Mynetwork" src="./images/eventsicon.png" alt="img"></span>
+                        <a href="events.html"> <span>Evénements</span></a>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="aside-item">
+                    <div class="gerer-reseau">
+                        <span><img class="Mynetwork" src="./images/pagesicon.png" alt="img"></span>
+                        <a href="pages.html"><span>Pages</span></a>
+                    </div>
+                    <div>5</div>
+                </div>
+                <div class="aside-item">
+                    <div class="gerer-reseau">
+                        <span><img class="Mynetwork" src="./images/lettericon.png" alt="img"></span>
+                       <a href="newletter.HTML"><span>Newletter</span></a>
+                    </div>
+                    <div>1</div>
+                </div>
+        
+            </aside>
+
+            
+                <!-- image-->
+                <!-- <div class="advert">
+                    <img src="./seewhoshiring.png" alt="Ad">
+ -->
+            <div class="apropos">
+                <!-- A propos-->
+                <div class="apropos-items">
+                    <span>À propos</span>
+
+                    <span>Accessibilité</span>
+                    
+                    <span>Assistance clientèle</span>
+                    
+                    <span>Conditions générales et confidentialité</span>
+                    
+                    <span>Préférences Pubs</span>
+                    
+                    <span>Publicité</span>
+                    
+                    <span>Services aux entreprises</span>
+                    
+                    <span>Téléchargez l’appli LinkedIn</span>
+                    
+                    <span></span>Plus</div>
+                <div class="apropos-info">
+                    <img src="./images/logoLinkedin.webp" alt="">
+                    <p> Corporation © 2025</p>
+                </div>
+            </div>
+        </div>
+
+
+        <section>
+
+            <div class="main-header">
+                <span >Développer</span>
+                <span class="selected">Reprendre Contact</span>
+            </div>
+
+
+        <div id="content" >
+
+            <div class="main-invitations">
+                <span>Aucune invitation en attente</span>
+                <span>Gérer</span>
+            </div>
+
+            <div class="main-jeux">
+                <div>
+                    <span>Restez en contact grâce à des jeux quotidiens</span>
+                    <span>
+                        <span>l</span>
+                        <span>></span>
+                    </span>
+                </div>
+                <div class="jeux">
+
+                    <div class="jeu">
+                        <div class="img-info">
+                            <img src="./images/jeu.svg" alt="img">
+                            <div class="jeu-info ">
+                                <div>
+                                    <span class="jeu-title bold">Queens</span>
+                                    <span>no. 88</span>
+                                </div>
+                                <div class="date">Friday, Jan 3</div>
+                            </div>
+                        </div>
+
+                        <div class="jeu-button">
+                            Jouer
+                        </div>
+                    </div>
+                    <div class="jeu">
+                        <div class="img-info">
+
+                            <img src="./images/tango.svg" alt="img">
+                            <div class="jeu-info ">
+                                <div>
+                                    <span class="jeu-title bold">Tango</span>
+                                    <span>no. 248</span>
+                                </div>
+                                <div class="date">Friday, Jan 3</div>
+                            </div>
+                        </div>
+                        <div class="jeu-button">
+                            Jouer
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- HADI DB DYAL AD Premium -->
+            <div class="premium-ad">
+                <h3>Atteignez vos objectifs plus rapidement grâce à Premium</h3>
+                <p>
+                    Découvrez qui a vu votre profil et envoyez directement des messages aux membres qui ne font pas partie de votre réseau.
+                </p>
+                <button class="premium-button">Essayer Premium pour 0 MAD</button>
+                <p class="disclaimer">Essai gratuit d’un mois. Annulez à tout moment.</p>
+            </div>
+
+            <!-- HADI DB DYAL Personnes que vous connaissez peut-être en fonction de votre activité récente-->
+            <div class="popular-pages-container"> 
+                <div class="header-populaire">
+                    <h2>Pages populaires dans votre réseau <span>Voir tout</span></h2>
+                
+                <div class="profile-container">
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/my background 2.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/ESISA.png" alt="#">
+                            </div>
+                        </div>
+                        <p><a href="#">ESISA</a></p>
+                        <p>10,000 abonnés</p>
+                        <p>Suivre</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/photot7.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/logo5.png" alt="">
+                            </div>
+                        </div>
+                        <p><a href="#">Junior dev</a></p>
+                        <p>1,426 abonnés</p>
+                        <p>Suivre</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/photo3jpg-min.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/logo2-min.jpg" alt="">
+                            </div>
+                        </div>                          
+                        <p><a href="#">Matine flo</a></p>
+                        <p>33,226 abonnés</p>
+                        <p>Suivre</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/photot7.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/logo3-min.png" alt="">
+                            </div>
+                        </div>
+                        <p><a href="#">Chinese speaker</a></p>
+                        <p>99,226 abonnés</p>
+                        <p>Suivre</p>
+                    </div>
+                </div>
+                <div class="profile-container">
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/photot7.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/profil5-min.jpg" alt="">
+                            </div>
+                        </div>
+                        <p><a href="#">Louis Almend</a></p>
+                        <p>60 abonnés</p>
+                        <p>Suivre</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/photo6-min.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/profil7-min.png" alt="">
+                            </div>
+                        </div>                              
+                        <p><a href="#">Alae vanel</a></p>
+                        <p>2,897 abonnés</p>
+                        <p>Suivre</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/photo4-min.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/profil8-min.jpg" alt="">
+                            </div>
+                        </div>                    
+                        <p><a href="#">Learn Coding</a></p>
+                        <p>85,626 abonnés</p>
+                        <p>Suivre</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/photo5-min.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/profil9-min.jpg" alt="">
+                            </div>
+                        </div>                      
+                        <p><a href="#">Alex rick</a></p>
+                        <p>54,326 abonnés</p>
+                        <p>Suivre</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+                <div class="header">
+                    <h2>Pages populaires dans votre réseau <span>Voir tout</span></h2>
+                </div>
+                <div class="profile-container all-profiles">
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/my background 2.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/profil10-min.jpg" alt="">
+                            </div>
+                        </div>
+                        <p><a href="#">Mouhcin Ousa</a></p>
+                        <p>Conducteur de travaux</p>
+                        <p>Suivre</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/my background 2.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/profil1-min.jpg" alt="">
+                            </div>
+                        </div>                              
+                        <p><a href="#">Louis Jean</a></p>
+                        <p>Assistant chez Martine</p>
+                        <p>Suivre</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/my background 2.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/profil2-min.jpg" alt="">
+                            </div>
+                        </div>                          
+                        <p><a href="#">Ervin Elie</a></p>
+                        <p>Ingénieur génie civil</p>
+                        <p>Suivre</p>
+                    </div>
+                </div>
+                <div class="profile-container all-profiles">
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/my background 2.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/js image.png" alt="">
+                            </div>
+                        </div>             
+                        <p><a href="#">Javascript</a></p>
+                        <p>Conducteur de travaux</p>
+                        <p>Suivre</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/my background 2.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/logo4-min.png" alt="">
+                            </div>
+                        </div>                           
+                        <p><a href="#">Atome lovers</a></p>
+                        <p>Conducteur de travaux</p>
+                        <p>Suivre</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-background">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <img src="./images/my background 2.jpg" alt="#">
+                            <div class="profile-photo"> 
+                                <img src="./images/logo7.png" alt="">
+                            </div>
+                        </div>                             
+                        <p><a href="#">Marime tyl</a></p>
+                        <p>Conducteur de travaux</p>
+                        <p>Suivre</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        
+            
+    </section>
+</main>
+
+ 
+</body>
+</html>
