@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evénements</title>
+    <link rel="stylesheet" href="./Styleevents.css">
+    <link rel="stylesheet" href="./navbar.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./images/logo.png" alt="logo"></a>
+            <div class="search-box">
+                <img src="./images/search.png">
+                <input type="text" placeholder="Search for anything">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" ><img src="./images/home.png" alt="home"> <span>Home</span></a></li>
+                <li><a href="#" class="active-link"><img src="./images/network.png" alt="network"> <span>My Network</span></a></li>
+                <li><a href="#"><img src="./images/jobs.png" alt="jobs"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="./images/message.png" alt="message"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="./images/notification.png" alt="notification"> <span>Notifications</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!----Dropdown menu-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-1.png">
+                    <div>
+                        <h3>John Doe</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <header class="header1">
+        
+
+        <h1>Events</h1>
+        <div class="section-header">
+            
+    
+            <button>Create an event</button>
+        </div>
+    </header>
+    <header>
+        
+
+        <h1>Your events</h1>
+    </header>
+    <div class="container">
+        <div class="section-header">
+            
+            <h2>Recommended for you</h2>
+        </div>
+        <div class="recommended-events">
+            <div class="event-card">
+                <img src="./images/DecisionGuide.png" alt="Event Image">
+                <div class="event-card-content">
+                    <h3>Segregation of Duties (SoD) Decision Guide - Free E-Book (33 pages)</h3>
+                    <p>Fri, Jan 8, 2027, 2:30 AM · Live Video</p>
+                </div>
+            </div>
+            <!-- Event Card 2 -->
+            <div class="event-card">
+                <img src="./images/communication.png" alt="Event Image">
+                <div class="event-card-content">
+                    <h3>New communication platform FUSION REVIEWS for scientists</h3>
+                    <p>Sat, Jan 11, 2025, 5:00 PM</p>
+                </div>
+            </div>
+            <!-- Event Card 3 -->
+            <div class="event-card">
+                <img src="./images/Finance.png" alt="Event Image">
+                <div class="event-card-content">
+                    <h3>Finance Bootcamp</h3>
+                    <p>Sat, Jan 18, 2025, 2:30 PM</p>
+                </div>
+            </div>
+
+                <!-- Event Card 4 -->
+                <div class="event-card">
+                    <img src="./images/marketing.png" alt="Event Image">
+                    <div class="event-card-content">
+                        <h3>Likely the Best Marketing Event of 2023 - Growth Inc.</h3>
+                        <p>Fri, Aug 6, 2027, 2:30 AM · Live Video</p>
+                    </div>
+                </div>
+                <!-- Event Card 5 -->
+                <div class="event-card">
+                    <img src="./images/AutODESK.jpg" alt="Event Image">
+                    <div class="event-card-content">
+                        <h3>Introduction to Character Modeling in Autodesk Maya</h3>
+                        <p>Sat, Sep 23, 2025, 5:00 PM</p>
+                    </div>
+                </div>
+                <!-- Event Card 6 -->
+                <div class="event-card">
+                    <img src="./images/BIM.jpg" alt="Event Image">
+                    <div class="event-card-content">
+                        <h3>Autodesk BIM Technology</h3>
+                        <p>Sat, Jan 18, 2025, 2:30 PM</p>
+                    </div>
+                </div>
+
+
+                  <!-- Event Card 10 -->
+                <div class="event-card">
+                    <img src="./images/CADpng.png" alt="Event Image">
+                    <div class="event-card-content">
+                        <h3>SOLIDWORKS: Resilient CAD Modeling Technique</h3>
+                        <p>Sat, Jan 18, 2025, 2:30 PM</p>
+                    </div>
+                </div>
+
+
+                 <!-- Event Card 11 -->
+                 <div class="event-card">
+                    <img src="./images/SolidWorksjpg.jpg" alt="Event Image">
+                    <div class="event-card-content">
+                        <h3>2025 SOLIDWORKS Masterclass Day 1</h3>
+                        <p>Sat, Sep 18, 2025, 2:30 PM</p>
+                    </div>
+                </div>
+
+
+                 <!-- Event Card 12 -->
+                 <div class="event-card">
+                    <img src="./images/Entrpreneurjpg.jpg" alt="Event Image">
+                    <div class="event-card-content">
+                        <h3>Entrepreneur in Residence - Live Q and A</h3>
+                        <p>Sat, Jan 18, 2025, 2:30 PM</p>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <script src="./messagerie/messagerie.js"></script>
+
+</body>
+</html>
