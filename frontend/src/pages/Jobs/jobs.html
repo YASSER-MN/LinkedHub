@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+   
     
     <link rel="stylesheet" href="./jobs.css">
     <title>LinkedIn</title>
@@ -23,10 +23,12 @@
         </div>
         <div class="navbar-center">
             <ul>
-                <li><a href="#" class="active-link"><img src="images/home.png" alt="home"> <span>Home</span></a></li>
+                <li><a href="../HOME/homePage/index.html" class="active-link"><img src="images/home.png" alt="home">
+                        <span>Home</span></a></li>
                 <li><a href="#"><img src="images/network.png" alt="network"> <span>My Network</span></a></li>
                 <li><a href="#"><img src="images/jobs.png" alt="jobs"> <span>Jobs</span></a></li>
-                <li><a href="#"><img src="images/message.png" alt="message"> <span>Messaging</span></a></li>
+                <li><a href="./Messagerie.html"><img src="images/message.png" alt="message"> <span>Messaging</span></a>
+                </li>
                 <li><a href="#"><img src="images/notification.png" alt="notification"> <span>Notifications</span></a>
                 </li>
             </ul>
@@ -100,6 +102,7 @@
             </div>
         </section>
 
+ 
         <!-- ------------center box--------------- -->
         <section class="center_job_container">
             <div class="left_job_div responsive_box_job">
@@ -122,7 +125,7 @@
                 <h2>Remote Work Opportunities</h2>
                 <p>Based on your expressed interest in remote positions</p>
                 <div class="company_job">
-                    <img class="company_job_photo" src="./image/logo5.png" alt="#">
+                    <img class="company_job_photo" src="./photos/cad.png" alt="#">
                     <div class="job_description">
                         <h6><a href="#">Crypto Coding Intern</a> </h6>
                         <p><a href="#">Sovereign Prime </a> <br>
@@ -191,7 +194,67 @@
             <div class="see_more_job">
                 <p>View All </p>
             </div>
+            
+            <div class="more_jobs_for_you first_job">
+                <h2>More jobs for you</h2>
+                <p>Based on your profile, preferences, and activity like applies, searches, and saves</p>
+                <div class="company_job">
+                    <img class="company_job_photo" src="./photos/software.png" alt="#">
+                    <div class="job_description">
+                        <h6><a href="#">Tech Lead senior Java / React  </a> </h6>
+                        <p><a href="#">ALTEN</a> <br>
+                            Rabat, Rabat-Salé-Kénitra, Morocco (Remote)</p>
+                        <div class="photo_pro_text">
+                            <img class="ph_pro_job" src="images/user-1.png" alt="#">
+                            <p>We highlight job details that match your preferences and skills. Click below to view and edit them./p>
+                        </div>
+                        <span>Posted 2 hours ago</span>
+                    </div>
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <i class="fa-solid fa-bookmark"></i>
+
+
+
+                    
+                </div>
+
+                               
+                    <div class="company_job">
+                        <img class="company_job_photo" src="./photos/exploration.png" alt="#">
+                        <div class="job_description">
+                            <h6><a href="#">BI Maintenance for Supply Chain Outbound & Inbound Logistic Finance </a> </h6>
+                            <p><a href="#">ALTEN MAROC</a> <br>
+                                Fez, Fès-Meknès, Morocco · 3 weeks ago · 89 applicants</p>
+                            <div class="photo_pro_text">
+                                <img class="ph_pro_job" src="images/user-1.png" alt="#">
+                                <p>We highlight job details that match your preferences and skills. Click below to view and edit them./p>
+                            </div>
+                            <span>Posted 1 hours ago</span>
+                        </div>
+                        <i class="fa-solid fa-eye-slash"></i>
+                        <i class="fa-solid fa-bookmark"></i>
+                    </div>
+
+
+                                     
+                        <div class="company_job">
+                            <img class="company_job_photo" src="./photos/encrypted.png" alt="#">
+                            <div class="job_description">
+                                <h6><a href="#">Crypto Data Scientist / Machine Learning - LLM Engineer  </a> </h6>
+                                <p><a href="#">Capegemini MAROC</a> <br>
+                                    Fez, Fès-Meknès, Morocco · 3 weeks ago · 89 applicants</p>
+                                <div class="photo_pro_text">
+                                    <img class="ph_pro_job" src="images/user-1.png" alt="#">
+                                    <p>We highlight job details that match your preferences and skills. Click below to view and edit them./p>
+                                </div>
+                                <span>Posted 1 hours ago</span>
+                            </div>
+                            <i class="fa-solid fa-eye-slash"></i>
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+            
         </section>
+
 
 
         <!-- ------------right box--------------- -->
@@ -199,30 +262,57 @@
         <section class="right_job_container">
             <aside class="pub_img_text">
                 <div class="all_links">
-                    <a href="#"> 
-                        <p>About &nbsp;Accessibilité &nbsp;Help Center</p>
-                        <p>Privacy & Terms</p>
-                        <p>Ad Choices &nbsp; Advertising</p>
-                        <p>Business Services</p>
-                        <p>Get the LinkedIn app</p>
-                    </a>
-                    <!-- Ajout de l'image avant LinkedIn Corporation -->
+                    <p>About &nbsp;Accessibilité &nbsp;Help Center</p>
+                    <p>Privacy & Terms</p>
+                    <p>Ad Choices &nbsp; Advertising</p>
+                    <p>Business Services</p>
+                    <p>Get the LinkedIn app</p>
                     <img src="./photos/linkedin.png" alt="Image" class="image-linkedin">
                     <span>LinkedIn Corporation © 2025</span>
                 </div>
             </aside>
+        
+            <!-- Filtrage Section -->
+            <div class="filter-section">
+                <h2>Filter Offers</h2>
+                <form class="filters">
+                    <div class="filter-group">
+                        <label for="job-type">Type job:</label>
+                        <select id="job-type" name="job-type">
+                            <option value="full-time">Full-time</option>
+                            <option value="part-time">Part-time</option>
+                            <option value="freelance">Freelance</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="location">Location:</label>
+                        <select id="location" name="location">
+                            <option value="casablanca">Casablanca</option>
+                            <option value="rabat">Rabat</option>
+                            <option value="remote">Remote</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="salary">Salary (DH):</label>
+                        <input type="number" id="salary-min" placeholder="Min" name="salary-min">
+                        <input type="number" id="salary-max" placeholder="Max" name="salary-max">
+                    </div>
+                    <div class="filter-group">
+                        <label for="sector">Sector:</label>
+                        <select id="sector" name="sector">
+                            <option value="it">IT</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="commerce">Commerce</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="filter-btn">📍 Filtrer</button>
+                </form>
+            </div>
         </section>
         
+        
     </main>
-
-
-
-
-
-
-
-
-
+    <script src="./jobs.js"></script>
 
     </article>
 </body>
