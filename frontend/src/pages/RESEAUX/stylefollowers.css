@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f2ef;
+    color: #333;
+} 
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.network {
+    width: 70%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.network h2 {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 20px;
+    display: inline; 
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.tab {
+    border: none;
+    background: none;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab.active {
+    border-bottom: 2px solid #0073b1;
+    color: #0073b1;
+    
+}
+
+.info {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.details {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.details h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.details p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.follow-btn {
+    border: 1px solid #0073b1;
+    color: #0073b1;
+    background: none;
+    border-radius: 30px;
+    padding: 7px 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.follow-btn:hover {
+    background: #005580;
+}
+
+.advert {
+    width: 25%;
+    padding: 20px;
+   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    text-align: center;
+}
+
+.advert img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.advert p {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.apropos-items{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-inline-start: 50 px;
+}
+
+.apropos-items > span{
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    margin-inline-start: 100 px ;
+    
+}
+
+.apropos-items > span:hover{
+    cursor: pointer;
+  
+}

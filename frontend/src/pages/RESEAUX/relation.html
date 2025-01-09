@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relations</title>
+  <link rel="stylesheet" href="styleRelation.css">
+  <link rel="stylesheet" href="navbar.css">
+  <script src="./index.js"></script>
+</head>
+<body onload="main()">
+        <nav class="navbar">
+      <div class="navbar-left">
+          <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+          <div class="search-box">
+              <img src="images/search.png">
+              <input type="text" placeholder="Search for anything" >
+          </div>
+      </div>
+      <div class="navbar-center">
+          <ul>
+              <li><a href="#" ><img src="images/home.png" alt="home"> <span>Home</span></a></li>
+              <li><a href="./index.html" class="active-link"><img src="images/network.png" alt="network"> <span>My Network</span></a></li>
+              <li><a href="#"><img src="images/jobs.png" alt="jobs"> <span>Jobs</span></a></li>
+              <li><a href="#"><img src="images/message.png" alt="message"> <span>Messaging</span></a></li>
+              <li><a href="#"><img src="images/notification.png" alt="notification"> <span>Notifications</span></a>
+              </li>
+          </ul>
+      </div>
+      <div class="navbar-right">
+          <div class="online">
+              <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+          </div>
+      </div>
+      <!----Dropdown menu-->
+      <div class="profile-menu-wrap" id="profileMenu">
+          <div class="profile-menu">
+              <div class="user-info">
+                  <img src="images/user-1.png">
+                  <div>
+                      <h3>John Doe</h3>
+                      <a href="#">See your profile</a>
+                  </div>
+              </div>
+              <hr>
+              <a href="#" class="profile-menu-link">
+                  <img src="images/feedback.png">
+                  <p>Give Feedback</p>
+                  <span>></span>
+              </a>
+              <a href="#" class="profile-menu-link">
+                  <img src="images/setting.png">
+                  <p>Settings & Privacy</p>
+                  <span>></span>
+              </a>
+              <a href="#" class="profile-menu-link">
+                  <img src="images/help.png">
+                  <p>Help & Support</p>
+                  <span>></span>
+              </a>
+              <a href="#" class="profile-menu-link">
+                  <img src="images/display.png">
+                  <p>Display & Accessibility</p>
+                  <span>></span>
+              </a>
+              <a href="#" class="profile-menu-link">
+                  <img src="images/logout.png">
+                  <p>Logout</p>
+                  <span>></span>
+              </a>
+          </div>
+      </div>
+  </nav>
+<!--     <header class="header">
+      <h1>My Network</h1>
+    </header> -->
+
+  <div class="mere">
+  <div class="container">
+   
+    <div class="left-column">
+      <h2>6 Connections</h2>
+      <div class="search-sort">
+        <div class="sort-by">
+          <label for="sort">Sort by:</label>
+          <select id="sort" onchange="handleSortChange(event)">
+            <option value="recent">Recently added</option>
+            <option value="name">Name</option>
+          </select>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search by name" onchange="handleChange(event)" name="search">
+        </div>
+      </div>
+      <div id="connection-list" class="connections-list">
+      
+        <div class="connection-item">
+          <img src="./images/Profile.png" alt="Profile" class="profile-pic">
+          <div class="connection-details">
+            <h3>Leyla ALMEND </h3>
+            <p>📈 +83 K suivie | IT recruiter 💻| Talent Acquisition Specialist🎯 | Consultante+20ans d'expertise dans le domaine du RH =>Mon rôle est de trouver les bons talents qui vont rayonner dans notre entreprise</p>
+            <p class="connected-time">Connected 14 hours ago</p>
+          </div>
+          <button class="message-btn">Message</button>
+          <span class="dots">...</span>
+        </div>
+        <div class="connection-item">
+          <img src="./images/women.jpg" alt="Profile" class="profile-pic">
+          <div class="connection-details">
+            <h3>Amina BENNOUNA </h3>
+            <p>🚀 Support IVI Infotainment | AI & Mechatronics Specialist | Data-Driven Innovator @ Capgemini Engineering 🤖</p>
+            <p class="connected-time">Connected 2 days ago</p>
+          </div>
+          <button class="message-btn">Message</button>
+          <span class="dots">...</span>
+        </div>
+      
+        
+        <div class="connection-item">
+          <img src="./images/man.jpg" alt="Profile" class="profile-pic">
+          <div class="connection-details">
+            <h3>Asim BLHAM </h3>
+            <p>+15k📈l Talent Acquisition Specialist 🎯| HR-</p>
+            <p class="connected-time">Connected 20 days ago</p>
+          </div>
+          <button class="message-btn">Message</button>
+          <span class="dots">...</span>
+        </div>
+ 
+        <div class="connection-item">
+          <img src="./images/women3.jpg" alt="Profile" class="profile-pic">
+          <div class="connection-details">
+            <h3>Leyla ACHIBAT</h3>
+            <p>🚀 Support IVI Infotainment | AI & Mechatronics Specialist | Data-Driven Innovator @ Capgemini Engineering 🤖</p>
+            <p class="connected-time">Connected 3 days ago</p>
+          </div>
+          <button class="message-btn">Message</button>
+          <span class="dots">...</span>
+        </div>
+
+        <div class="connection-item">
+          <img src="./images/man2.jpg" alt="Profile" class="profile-pic">
+          <div class="connection-details">
+            <h3>Nacer MELAM</h3>
+            <p>AI Engineering Student | Deep Learning & LLMs | Machine Learning & Data Science</p>
+            <p class="connected-time">Connected 3 days ago</p>
+          </div>
+          <button class="message-btn">Message</button>
+          <span class="dots">...</span>
+        </div>
+
+        
+        <div class="connection-item">
+          <img src="./images/pfpfinale.jpg" alt="Profile" class="profile-pic">
+          <div class="connection-details">
+            <h3>Othman MEKOUAR </h3>
+            <p>M1 MIAGE</p>
+            <p class="connected-time">Connected 10 days ago</p>
+          </div>
+          <button class="message-btn">Message</button>
+          <span class="dots">...</span>
+        </div>
+
+        <div class="connection-item">
+          <img src="./images/pofi.png" alt="Profile" class="profile-pic">
+          <div class="connection-details">
+            <h3>Alya BENNANI </h3>
+            <p>M2 Technologies de l'Hypermedia</p>
+            <p class="connected-time">Connected 3 days ago</p>
+          </div>
+          <button class="message-btn">Message</button>
+          <span class="dots">...</span>
+        </div>
+
+        <div class="connection-item">
+          <img src="./images/womeen5.webp" alt="Profile" class="profile-pic">
+          <div class="connection-details">
+            <h3>Leyla ACHIBAT</h3>
+            <p>📈 +83 K suivie | IT recruiter 💻| Talent Acquisition Specialist🎯 | Consultante+20ans d'expertise dans le domaine du RH =>Mon rôle est de trouver les bons talents qui vont rayonner dans notre entreprise</p>
+            <p class="connected-time">Connected 3 days ago</p>
+          </div>
+          <button class="message-btn">Message</button>
+          <span class="dots">...</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+    <div class="right-column">
+      <div class="ad">
+        <img src="./seewhoshiring.png" alt="Ad Image">
+  
+      <div class="apropos-items">
+        <span>About</span>
+        <span>Accessibility</span>
+        <span>Help Center</span>
+        <span>Privacy & Terms</span>
+        <span>Ad Choices</span>
+        <span>Advertising</span>
+        <span>Business Services</span>
+        <span>LinkedIn Corporation © 2025</span>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
