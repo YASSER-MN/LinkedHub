@@ -52,6 +52,7 @@ const data = [
 
 let sortedData=[...data];
   
+
 function createConnectionList(d){
     let element =document.getElementById("connection-list");
     let result="";
