@@ -1,0 +1,279 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Helvetica",sans-serif;
+}
+
+nav{
+    position:sticky;
+    width:auto;
+    height:40px;
+}
+.logo{
+  right:50px;
+  }
+  .logo img{
+      height:40px;
+      width:auto;
+      margin-left:40px;
+      margin-top:20px;
+  }
+.container{
+    position: absolute;
+    margin-top:40px;
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    column-gap: 30px;
+}
+header {
+    display:inline-flex;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+p{
+    font-size:14px;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0 3px 10px rgb(202, 204, 206);
+}
+.login{
+    height: 540px;
+}
+.container .signup{
+   max-width:900px;
+    height:380px;
+    margin:0;
+    margin-bottom: 90px;
+}
+#email input{
+    margin-top: 10px;
+}
+#Cpass input{
+    margin-top: 15px;
+}
+
+.life {
+margin-left:120px;
+font-size:30px;
+}
+.agree{
+    display:flex;
+    font-size: 14px;
+    vertical-align: baseline;
+    margin-bottom: 0;
+    margin-top:40px;
+}
+.agree a{
+    margin-left:10px;
+    font-size:14px;
+}
+
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+}
+form{
+    margin-top: 30px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+    margin-bottom: 15px;
+}
+
+.input-field input:focus{
+    top:0;
+    border:1px solid #0077b5;
+    font-size:16px;
+    transition: all 0.3s ease;
+    }
+    .forgot-pass{
+        margin-top:20px;
+    }
+    .forgot-pass a{
+     text-align:left;
+        color:#0077b5;
+        font-size:14px;
+        top:15px;
+    }
+   
+.field button{
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+border-radius:25px;
+height:45px;
+}
+
+.field button:hover{
+    background-color: #016dcb;
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 50px;
+}
+.form-link a{
+    color:#0171d3;
+    font-size:14px;
+    font-weight: 600;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form a{
+    color: #0171d3;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #d4d4d4;
+    
+}
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#link2{
+     margin-top: 5px;
+}
+
+.facebook-icon,
+img.google-img{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+img.ios-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+img.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.ios button{
+    border-radius:25px;
+height:45px;
+width:100%;
+background:#fff;
+color:black;
+border: 1px solid #232836;
+}
+.google button{
+    margin-top:10px;
+    border-radius:25px;
+height:45px;
+width:100%;
+background: #fff;
+color:black;
+border: 1px solid #232836;
+}
+.google button:hover,
+.ios button:hover{
+    background:#0171d3;
+}
+#options2 button{
+    width:500px;
+}
+
+.input-field span{
+    color:#e50913;
+    display:flex;
+    margin-bottom: 70px;
+  }
+
+  .input-field .error{
+    display:flex;
+    align-items: center;
+    color:#d93025;
+    font-size:15px;
+    top: 70%;
+    right: 25px;
+    transform: translateY(-50%);
+}
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #016dcb;
+    cursor: pointer;
+    padding: 5px;
+}
+#eye2{
+
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 400px) {
+    .form{
+        padding: 20px 10px;
+    }
+    
+}
