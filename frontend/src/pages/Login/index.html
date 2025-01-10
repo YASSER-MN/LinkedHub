@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Responsive LinkedIn Login and Signup Form </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+                        
+    </head>
+    <body>
+        <section class="forms">
+            <nav>
+                <div class="logo">
+                    <img src="./images/linked@.png" alt="">
+                </div>
+            </nav>
+         <div class="container"> 
+            <div class="form login">
+                <div class="form-content">
+                    <header>Sign in </header>
+                    <p>Stay updated on your professional world </p>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email or Phone" class="input"  id="login-contact-email" required >
+                        </div>
+
+                
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="forgot-pass">
+                            <a href="#">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field" id="signin">
+                            <button type="submit" disabled>Sign in</button>
+                        </div>
+                    </form>
+
+                   
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <button>
+                        <img src="./images/google.png" alt="ios" class="google-img">
+                        Sign in with Google </button>
+                    </a>
+                </div>
+
+                <div class="media-options">
+                    <a href="#" class="field ios">
+                        <button>
+                        <img src="./images/ios2.png" alt="" class="google-img">
+                        Login with Apple
+                    </button>
+                    </a>
+                </div>
+                <div class="form-link" >
+                    <div class="form-field">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+                </div>
+            </div>
+            </div>
+       
+
+            <!-- Signup Form -->
+
+           <div class="form signup">
+                <div class="form-content">
+                    <header class="life">Make the most of your professional life</header>
+                    <form action="#" >
+                        <div class="field input-field" id="email">
+                            <input type="email"  class="input" placeholder="Email or phone number" id="signup-contact-email" onkeyup="validateEmail()">
+                            <span id="email-error" class="error" ></span>
+                        </div>
+
+                        <div class="field input-field"  id="Cpass">
+                            <input type="password"  class="password" placeholder="Password (6 or more characters)">
+                            <i class='bx bx-hide eye-icon' id="eye2"></i>
+                        </div> 
+
+                  
+                        <div class="agree">
+                            <p>By clicking Agree & join, you agree to the Linkedin</p>
+                            <a href="#">User Agreement</a>,
+                           <a href="#">Privacy Policy</a>, and
+                           <a href="#">Cookie Policy</a>.
+                        </div>
+                  
+                        <div class="field button-field">
+                            <div class="join">
+                            <button type="submit">Agree & Join</button>
+                             </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="form-link" >
+                    <span>Already on LinkedIn? <a href="#" class="link login-link">Sign in</a></span> <br>
+                   <br> <span>Looking to create a page for a business? <a href="#" >Get help</a></span>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
