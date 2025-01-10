@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search for anything">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" alt="home"> <span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png" alt="network"> <span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt="jobs"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt="message"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt="notification"> <span>Notifications</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!----Dropdown menu-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>John Doe</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <script src="./index.js"></script>
+    <div class="profile_page">
+        <div class="left_box">
+            <div class="profil_info" id="pro_info">
+                <img class="background_img" src="./images/download (3).png" alt="#">
+                <img class="profile_pic" src="./images/user-1.png" alt="img">
+            </div>
+            <div class="personal_info_profile">
+                <div class="personal_info_profile_"><h3 class="nameprofile">John Doe</h3>
+                <p>Web Developer</p>
+                <p>Paris, France</p>
+                <p>500+ connections</p>
+            </div>
+            <div class="personal_info_profile_img">
+                <img class="personal_info_profile_img" src="./images/download.png" alt="">
+            </div>
+            </div>
+            <div class="buttons">
+                <button class="buttonprofile">Open to</button>
+                <button class="buttonprofile">Add profile section</button>
+                <button class="buttonprofile">Enhance profile</button>
+                <button class="buttonprofile">Resources</button>
+            </div>
+        </div>
+        <div class="suggested">
+            <h1 class="sugg">Suggested for you</h1>
+            <p> Private to you</p>
+        </div>
+        <div class="Analytics">
+            <h1 class="Analytics_txt">Analytics</h1>
+            <p>Private to you</p>
+            <div class="Statistics">
+                <div class="ProfileViews">
+                    <img class="views" src="./images/network.png" alt="#">
+                    <h1 class="nbviews">70 views</h1>
+                    <p>
+                        discover who viewed your profile
+                    </p>
+                </div>
+                <div class="postImpressions">
+                    <img class="imgstatistics" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAJ5JREFUWEftltsRQDAQRU8aUYROVISKdKIIjXj8GENiZRKGcfO7m+TO2afjZce9TA+fE1QCHVAESA5ABfS5SFuEGqA2Pmtn++KX5UiQhVGEniaUXJW5Q5ZclRIEnPYtERKh1NmnHFIOKYc803rbeTXLfOvMvwnFLlyx/gfiVqe2Ns7sdgmykO4JjdaFm+yrDgkKEA4Suiki159VlVmsJuSHWyVY4L0gAAAAAElFTkSuQmCC" alt="#">
+                    <h1 class="Impressions">500 post impressions</h1>
+                    <p>check out who's engaging with your post.</p>
+                    <p class="gg">past 7 days</p>
+                </div>
+                <div class="Search">
+                    <img class="imgsearch" src="./images/search.png" alt="#">
+                    <h1 class="nbsearch">15 search impressions</h1>
+                    <p>see how often you appear in search results</p>
+                </div>
+            </div>
+            <hr>
+            <div class="Show_Analytics">
+                <h1 class="show">Show all Analytics</h1>
+            </div>
+        </div>
+        <div class="Activity">
+            <h1 class="act">Activity</h1>
+            <h2 class="nbact">120 Activity</h2>
+            <div class="buttonsactivity">
+            <button class="bb">Posts</button>
+            <button class="bb">Images</button>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
